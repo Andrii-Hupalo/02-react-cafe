@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/02-react-cafe/",
+  base: process.env.VERCEL ? "/" : "/02-react-cafe/",
 });
